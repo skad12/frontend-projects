@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sidebar</title>
+
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="min-h-screen antialiased text-white" x-data="{isOpen: false}">
+
+        <div class="flex items-baseline p-4 text-2xl font-bold capitalize bg-gray-700 space-x-96 sm:text-3xl">
+            
+        <div><button class="p-2 rounded-md focus:outline-none focus:bg-gray-600 hover:bg-gray-600"  @click="isOpen=true"><svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+             </svg></button></div>
+        
+        <div>alpinejs</div>
+
+        </div>
+        
+        
+        <div class="z-10 block h-screen px-6 py-8 capitalize bg-indigo-900 w-80" x-show="isOpen">
+        
+        <div class="flex items-baseline justify-between ">
+        
+        <div class="text-2xl font-bold sm:text-3xl ">sidebar</div>
+        
+          <div><button class="p-2 rounded-md focus:outline-none focus:bg-indigo-800 hover:bg-indigo-800" @click="isOpen = false"><svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg></button></div>
+        </div>
+        
+        <div class="mt-16 ">
+        <ul class="space-y-4 ">
+        
+        <li class="block px-4 py-2 rounded-md hover:bg-indigo-800 ">home</li>
+        <li class="block px-4 py-2 rounded-md hover:bg-indigo-800 ">about</li>
+        <li class="block px-4 py-2 rounded-md hover:bg-indigo-800 ">pricing</li>
+        <li class="block px-4 py-2 rounded-md hover:bg-indigo-800 ">products</li>
+        </ul>
+        
+        </div>
+        
+          </div> 
+    
+        </div>
+
+
+</body>
+</html>
+
+
+
+
+
+
+    

@@ -1,0 +1,23 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss build src/styles.css -o public/styles.css" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skad12/facebook.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skad12/facebook/issues"
+  },
+  "homepage": "https://github.com/skad12/facebook#readme",
+  "dependencies": {
+    "tailwindcss": "^2.2.19"
+  }
+}
