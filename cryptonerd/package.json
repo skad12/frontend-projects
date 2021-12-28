@@ -1,0 +1,16 @@
+{
+  "name": "cryptonerd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/input.css -o ./layouts/output.css --watch",
+    "prod": "npx tailwindcss -i ./src/input.css -o ./layouts/output.css --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.0.7"
+  }
+}
